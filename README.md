@@ -18,3 +18,14 @@ Steam Charts是衡量Steam上的游戏趋势的工具。该网站由网络前端
 该网站虽然数据更新不如SteamDB及时，且存在一部分数据缺失，但好在不需要进行安全验证，在无法从SteamDB上直接下载相关数据集的情况下方便进行爬取。
 ### Steam数据统计网
 Steam数据统计网受上述两个网站的启发，使用阿里云ECS部署，阿里云RDS、Redis持久化数据，阿里云全站加速cdn，是国内完成度较高的Steam游戏数据统计网站。
+## 我的工作环境概览
+Python环境：Python 3.11(64-bit)或Python 3.9(64-bit)<br>
+工作环境：JupyterLab或Jupyter Notebook，Visual Studio 2022，Visual Studio Code<br>
+### JupyterLab和Jupyter Notebook
+Jupyter NoteBook是最初的Jupyter项目，是一个非常流行的交互式计算环境，允许用户创建和共享包含代码、文本和可视化的文档。<br>
+JupyterLab是Jupyter Notebook的全面升级，是集Jupyter Notebook、文本编辑器、终端以及各种个性化组件于一体的全能IDE。另外，JupyterLab的界面更为灵活，用户可以自由地拖放、缩放、布置多个窗口。虽然也可以使用.py文件直接运行Python程序，但是使用.ipynb来运行和记录其代码，可以在整个过程中解释其逻辑。
+### Visual Studio 2022和Visual Studio Code
+Visual Studio 2022和Visual Studio Code都是由微软开发的集成开发环境(IDE)。<br>
+Microsoft Visual Studio2022适用于多种编程语言和平台，提供丰富的开发工具和功能。另外，Visual Studio 2022拥有强大的Python环境和包(PyPI)的管理和更新功能，故我使用它来配置Python环境。<br>
+Visual Studio Code相较于Visual Studio 2022是一款更加轻量级的文本编辑器，拥有丰富的扩展，主要适用于快速开发小型项目或进行脚本编写，故我主要使用Visual Studio Code来编辑代码。另外，Visual Studio Code在安装了Jupyter扩展后，可以使用正在运行中的Jupyter Python3(ipykernel)内核URL直接运行.ipynb文件。<br>
+当在Visual Studio 2022中配置好Python环境，并且在Visual Studio Code中安装了Python扩展后，它会读取系统的PATH环境变量，从中找到Python解释器的路径，使用该解释器来执行Python代码。
